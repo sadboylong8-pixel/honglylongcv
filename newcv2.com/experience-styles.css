@@ -1,0 +1,80 @@
+/* ---------- EXPERIENCE PAGE ---------- */
+.experience-timeline {
+  display: grid;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.exp-item {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(0, 173, 181, 0.16);
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.exp-item:hover {
+  border-color: #00adb5;
+  transform: translateY(-4px);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+
+.exp-header h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.exp-date {
+  background: rgba(0, 173, 181, 0.18);
+  color: #00adb5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.exp-item h5 {
+  margin: 0 0 12px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.exp-item p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.exp-item ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #a1aab5;
+  line-height: 1.9;
+}
+
+.exp-item li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+  .exp-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .exp-item {
+    padding: 24px;
+  }
+}
